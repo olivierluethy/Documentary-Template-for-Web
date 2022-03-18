@@ -29,10 +29,11 @@ html {
                 display: flex;
                 img {
                     width: 10%;
+                    object-fit: contain;
                 }
                 h1 {
-                    margin-top: 2.8%;
                     margin-left: 4%;
+                    margin-top: 1.7rem;
                 }
             }
             .nav2 {
@@ -44,9 +45,9 @@ html {
                     text-align: center;
                     transition: 0.5s;
                     padding: 23px 20px;
+                    margin-top: 0.8rem;
+                    margin-bottom: 0.8rem;
                     text-decoration: none;
-                    margin-top: 8%;
-                    margin-bottom: 8%;
                     &:hover {
                         background-color: black;
                         color: white;
@@ -60,9 +61,11 @@ html {
             margin-right: 92.6%;
             position: sticky;
             font-family: Arial, Helvetica, sans-serif;
-            top: 12.4%;
+            top: 10%;
             z-index: 100;
-            box-shadow: 10px 0px 5px grey;
+            width: 6.8%;
+            box-shadow: 10px 0 5px -2px #888;
+            height: 35vh;
             a {
                 display: block;
                 text-align: center;
@@ -79,6 +82,7 @@ html {
             }
             /* Dark-Ligh Mode */
             .toggle-container {
+                margin-right: 10%;
                 input[type=checkbox] {
                     height: 0;
                     width: 0;
@@ -127,6 +131,7 @@ html {
             p {
                 font-family: Arial, Helvetica, sans-serif;
                 color: var(--color-text);
+                font-weight: bold;
             }
             a {
                 display: block;

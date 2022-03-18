@@ -34,10 +34,12 @@ html body nav .nav1 {
 }
 html body nav .nav1 img {
   width: 10%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 html body nav .nav1 h1 {
-  margin-top: 2.8%;
   margin-left: 4%;
+  margin-top: 1.7rem;
 }
 html body nav .nav2 {
   display: flex;
@@ -49,9 +51,9 @@ html body nav .nav2 a {
   text-align: center;
   transition: 0.5s;
   padding: 23px 20px;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
   text-decoration: none;
-  margin-top: 8%;
-  margin-bottom: 8%;
 }
 html body nav .nav2 a:hover {
   background-color: black;
@@ -64,9 +66,11 @@ html body .box {
   position: -webkit-sticky;
   position: sticky;
   font-family: Arial, Helvetica, sans-serif;
-  top: 12.4%;
+  top: 10%;
   z-index: 100;
-  box-shadow: 10px 0px 5px grey;
+  width: 6.8%;
+  box-shadow: 10px 0 5px -2px #888;
+  height: 35vh;
   /* Dark-Ligh Mode */
 }
 html body .box a {
@@ -81,6 +85,9 @@ html body .box a:hover {
   color: white;
   transition: 0.5s;
   margin-left: 10%;
+  margin-right: 10%;
+}
+html body .box .toggle-container {
   margin-right: 10%;
 }
 html body .box .toggle-container input[type=checkbox] {
@@ -129,6 +136,7 @@ html body .side {
 html body .side p {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--color-text);
+  font-weight: bold;
 }
 html body .side a {
   display: block;

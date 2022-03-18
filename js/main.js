@@ -6,7 +6,7 @@ function goToEinleitung() {
     });
 
     document.getElementById(1).style = "background-color: yellow";
-    setTimeout(function () { document.getElementById(1).style = "background-color: none"; }, 1000);
+    setTimeout(function() { document.getElementById(1).style = "background-color: none"; }, 1000);
 }
 
 function goToHauptteil() {
@@ -17,7 +17,7 @@ function goToHauptteil() {
     });
 
     document.getElementById(2).style = "background-color: yellow";
-    setTimeout(function () { document.getElementById(2).style = "background-color: none"; }, 1000);
+    setTimeout(function() { document.getElementById(2).style = "background-color: none"; }, 1000);
 }
 
 function goToSchluss() {
@@ -28,7 +28,7 @@ function goToSchluss() {
     });
 
     document.getElementById(3).style = "background-color: yellow";
-    setTimeout(function () { document.getElementById(3).style = "background-color: none"; }, 1000);
+    setTimeout(function() { document.getElementById(3).style = "background-color: none"; }, 1000);
 }
 
 function goToFazit() {
@@ -39,7 +39,7 @@ function goToFazit() {
     });
 
     document.getElementById(4).style = "background-color: yellow";
-    setTimeout(function () { document.getElementById(4).style = "background-color: none"; }, 1000);
+    setTimeout(function() { document.getElementById(4).style = "background-color: none"; }, 1000);
 }
 
 window.addEventListener('scroll', () => {
@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side1").style = "color: royalblue;";
     }
     if (scrolled > 299) {
-        document.getElementById("side1").style = "color: black; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side1").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 699) {
         document.getElementById("side1").style = "color: royalblue;";
@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side2").style = "color: royalblue;";
     }
     if (scrolled > 699) {
-        document.getElementById("side2").style = "color: black; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side2").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 999) {
         document.getElementById("side2").style = "color: royalblue; border-left-color: coral;";
@@ -74,7 +74,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side3").style = "color: royalblue;";
     }
     if (scrolled > 999) {
-        document.getElementById("side3").style = "color: black; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side3").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 1399) {
         document.getElementById("side3").style = "color: royalblue;";
@@ -85,6 +85,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("side4").style = "color: royalblue;";
     }
     if (scrolled > 1399) {
-        document.getElementById("side4").style = "color: black; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side4").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
 })
