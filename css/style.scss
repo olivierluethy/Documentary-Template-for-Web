@@ -1,0 +1,160 @@
+html {
+    --bg: #FCFCFC;
+    --bg-text: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+    &[data-theme='dark'] {
+        --bg: #333333;
+        --bg-panel: #434343;
+        --color-headings: #3694FF;
+        --color-text: #B5B5B5;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+        height: 10000px;
+        background-color: var(--bg);
+        nav {
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            font-family: 'Roboto Mono', monospace;
+            display: flex;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 2px 3px 5px grey;
+            .nav1 {
+                display: flex;
+                img {
+                    width: 10%;
+                }
+                h1 {
+                    margin-top: 2.8%;
+                    margin-left: 4%;
+                }
+            }
+            .nav2 {
+                display: flex;
+                margin-right: 10%;
+                a {
+                    display: block;
+                    color: white;
+                    text-align: center;
+                    transition: 0.5s;
+                    padding: 23px 20px;
+                    text-decoration: none;
+                    margin-top: 8%;
+                    margin-bottom: 8%;
+                    &:hover {
+                        background-color: black;
+                        color: white;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+        .box {
+            background-color: chocolate;
+            margin-right: 92.6%;
+            position: sticky;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 12.4%;
+            z-index: 100;
+            box-shadow: 10px 0px 5px grey;
+            a {
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: white;
+                padding: 20px 10px;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    transition: 0.5s;
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
+            }
+            /* Dark-Ligh Mode */
+            .toggle-container {
+                input[type=checkbox] {
+                    height: 0;
+                    width: 0;
+                    visibility: hidden;
+                    &:checked+label {
+                        background: var(--color-headings);
+                        &::after {
+                            left: calc(100% - 5px);
+                            transform: translateX(-100%);
+                        }
+                    }
+                }
+                label {
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    width: 52px;
+                    height: 27px;
+                    background: grey;
+                    float: right;
+                    border-radius: 100px;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 3px;
+                        left: 3px;
+                        width: 20px;
+                        height: 20px;
+                        background: #fff;
+                        border-radius: 90px;
+                        transition: 0.3s;
+                    }
+                    &:active {
+                        &::after {
+                            width: 45px;
+                        }
+                    }
+                }
+            }
+        }
+        .side {
+            position: sticky;
+            top: 20%;
+            margin-left: 80%;
+            margin-bottom: 50%;
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                color: var(--color-text);
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                color: royalblue;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 4%;
+                cursor: pointer;
+            }
+        }
+        .content {
+            position: absolute;
+            top: 11%;
+            left: 8%;
+            font-family: 'Roboto Mono', monospace;
+            margin-right: 30%;
+            margin-left: 1%;
+            h1,
+            p {
+                color: var(--color-text);
+            }
+        }
+    }
+    .transition,
+    .transition *,
+    .transition *::before,
+    .transition *::after {
+        transition: all 750ms !important;
+        transition-delay: 0 !important;
+    }
+}
