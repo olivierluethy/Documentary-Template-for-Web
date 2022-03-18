@@ -3,11 +3,13 @@ html {
     --bg-text: #EBEBEB;
     --color-headings: #0077FF;
     --color-text: #333333;
+    --color-text-link: royalblue;
     &[data-theme='dark'] {
         --bg: #333333;
         --bg-panel: #434343;
         --color-headings: #3694FF;
         --color-text: #B5B5B5;
+        --color-text-link: #FCFCFC;
     }
     body {
         padding: 0;
@@ -136,7 +138,7 @@ html {
             a {
                 display: block;
                 text-decoration: none;
-                color: royalblue;
+                color: var(--color-text-link);
                 font-family: Arial, Helvetica, sans-serif;
                 margin-bottom: 4%;
                 cursor: pointer;

@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side1").style = "color: royalblue;";
     }
     if (scrolled > 299) {
-        document.getElementById("side1").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side1").style = "padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 699) {
         document.getElementById("side1").style = "color: royalblue;";
@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side2").style = "color: royalblue;";
     }
     if (scrolled > 699) {
-        document.getElementById("side2").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side2").style = "padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 999) {
         document.getElementById("side2").style = "color: royalblue; border-left-color: coral;";
@@ -74,7 +74,7 @@ window.addEventListener('scroll', () => {
         document.getElementById("side3").style = "color: royalblue;";
     }
     if (scrolled > 999) {
-        document.getElementById("side3").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side3").style = "padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
     if (scrolled > 1399) {
         document.getElementById("side3").style = "color: royalblue;";
@@ -85,6 +85,6 @@ window.addEventListener('scroll', () => {
         document.getElementById("side4").style = "color: royalblue;";
     }
     if (scrolled > 1399) {
-        document.getElementById("side4").style = "color: black; padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
+        document.getElementById("side4").style = "padding-left: 5px; font-weight: bold; border-left: 3px solid hsla(206,100%,35%,1);";
     }
 })
